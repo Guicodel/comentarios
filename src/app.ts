@@ -1,3 +1,7 @@
+//en este archivo se importan todas los modulos 
+//en la funcion initlApp() se crean las instancia
+//de cada modulo
+
 import express, { Express } from "express";
 import * as bodyParser from "body-parser";
 import UserModules from "./modules/usermodule/init";

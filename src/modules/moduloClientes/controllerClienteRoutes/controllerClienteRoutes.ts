@@ -8,7 +8,28 @@ class ClienteRoutesController {
     constructor() {
 
     }
-    //funciones para gestionar clientes //ARIEL
+
+    //estas son las funciones llamadas desde el archivo "routesClienteModule.ts"
+    //sirven para llamar a su vez a las funciones que hacen las consulta
+    // a la base de datos, osea las que estan en la carpeta "businnesClienteController"
+    //para ser mas preciso se importa el archivo "BusinessCliente.ts"
+    //en ese archivo estan las funciones que hacen consultas a la base de datos
+    //se importa el archivo correspondiente a cada caso
+    //ejemplo si este fuera para reuniones se importaria el archivo "BusinessReuniones.ts"
+
+    //todas estan funciones en esencia son los que reciben los datos y muestran 
+    //los resultados todos tienen un "response status"
+    //todas llaman a una funcion que hace consultas a la base de datos
+    //se pueden dar cuenta de las operaciones que hace cada funcion por el mismo nombre
+
+
+    //cabe aclarar que estos resultados son los que se envian y muestran en la aplicacion
+
+
+    //esta funcion recibe los datos de un fomulario(body) mediante el parametro request
+    // en el request tambien estan los paramatros de ahi se toman el vendedorId 
+ 
+    
 
     public async createCliente(request: Request, response: Response) {
         var cliente: BusinessCliente = new BusinessCliente();
